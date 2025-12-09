@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klasifikasi Serangga</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Klasifikasi Serangga</h1>
+    <p>Pilih beberapa ciri untuk mengidentifikasi jenis serangga</p>
+</header>
+
+<div class="card">
+    <h2>Pilih Ciri Serangga</h2>
+
+    <div class="checkbox-group">
+        <label><input type="checkbox" value="berbadan beruas"> berbadan beruas</label>
+        <label><input type="checkbox" value="memiliki antena"> memiliki antena</label>
+        <label><input type="checkbox" value="sayap transparan"> sayap transparan</label>
+        <label><input type="checkbox" value="warna cerah"> warna cerah mencolok</label>
+        <label><input type="checkbox" value="mengeluarkan bau"> mengeluarkan bau</label>
+        <label><input type="checkbox" value="gigitan gatal"> gigitan gatal</label>
+        <label><input type="checkbox" value="aktif di malam hari"> aktif di malam hari</label>
+        <label><input type="checkbox" value="melompat"> bergerak melompat</label>
+        <label><input type="checkbox" value="berjalan lambat"> berjalan lambat</label>
+        <label><input type="checkbox" value="mendengung"> mendengung</label>
+        <label><input type="checkbox" value="jejak cair"> meninggalkan jejak cair</label>
+    </div>
+
+    <button onclick="analisisMulti()">🔍 Analisis Serangga</button>
+
+    <h3>Hasil Analisis:</h3>
+    <div id="hasil" class="hasil-box hidden"></div>
+</div>
+
+<footer>
+    Sistem Klasifikasi Serangga - Kelompok 9
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
