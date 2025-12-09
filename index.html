@@ -1,45 +1,36 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Klasifikasi Serangga</title>
+    <title>Pengendalian Serangga</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <header>
+        <h1>Panduan Pengendalian Serangga</h1>
+        <p>Masukkan nama serangga untuk mengetahui metode pengendaliannya</p>
+    </header>
 
-<header>
-    <h1>Klasifikasi Serangga</h1>
-    <p>Pilih beberapa ciri untuk mengidentifikasi jenis serangga</p>
-</header>
+    <section class="input-box">
+        <input type="text" id="inputSerangga" placeholder="Contoh: belalang, kutu daun, penggerek batang...">
+        <button onclick="cariSerangga()">Cari</button>
+    </section>
 
-<div class="card">
-    <h2>Pilih Ciri Serangga</h2>
+    <section class="daftar">
+        <h2>Daftar Serangga yang Tersedia</h2>
+        <ul id="listSerangga"></ul>
+    </section>
 
-    <div class="checkbox-group">
-        <label><input type="checkbox" value="berbadan beruas"> berbadan beruas</label>
-        <label><input type="checkbox" value="memiliki antena"> memiliki antena</label>
-        <label><input type="checkbox" value="sayap transparan"> sayap transparan</label>
-        <label><input type="checkbox" value="warna cerah"> warna cerah mencolok</label>
-        <label><input type="checkbox" value="mengeluarkan bau"> mengeluarkan bau</label>
-        <label><input type="checkbox" value="gigitan gatal"> gigitan gatal</label>
-        <label><input type="checkbox" value="aktif di malam hari"> aktif di malam hari</label>
-        <label><input type="checkbox" value="melompat"> bergerak melompat</label>
-        <label><input type="checkbox" value="berjalan lambat"> berjalan lambat</label>
-        <label><input type="checkbox" value="mendengung"> mendengung</label>
-        <label><input type="checkbox" value="jejak cair"> meninggalkan jejak cair</label>
-    </div>
+    <section id="hasil" class="hasil-box"></section>
 
-    <button onclick="analisisMulti()">🔍 Analisis Serangga</button>
+    <footer>
+        Dibuat oleh <strong>Kelompok 3</strong>
+    </footer>
 
-    <h3>Hasil Analisis:</h3>
-    <div id="hasil" class="hasil-box hidden"></div>
-</div>
-
-<footer>
-    Sistem Klasifikasi Serangga - Kelompok 9
-</footer>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
